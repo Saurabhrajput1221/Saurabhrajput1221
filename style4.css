@@ -1,0 +1,26 @@
+.middle {
+    margin: auto;
+}
+.center{
+    text-align: left;
+}
+.right{
+    text-align: right;
+}
+table{
+    border: 1px solid black;
+    border-spacing: 0px;
+}
+td{
+    border: 1px solid black;
+    padding: 1px;
+}
+.space{
+    margin-top: 50px;
+}
+.green{
+    background-color: #33CC33;
+}
+.blue{
+    background-color: #334899;
+}
