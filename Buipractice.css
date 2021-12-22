@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Pacifico|Righteous|Roboto+Condensed|Ubuntu');
+.navbar{
+    padding: 0.5rem 1rem;
+}
+/* body{
+    text-align: center;
+} */
+.nav-link{
+    color: black;
+    margin: 15px;
+    font-size: 15px;
+    /* font-family: 'Roboto Condensed'; */
+
+}
+.temp{
+    padding: 13px 46px;
+    margin: 4%;
+    background-color: transparent;
+    border: 1px solid #dee2e6;
+
+}
+.site-containt{
+    background-attachment: fixed;
+    background-image: url("https://duttrohan0302.github.io/dec16_bootstrapUI/images/image2.jpg");
+    text-align: center;
+   
+}
+.buttons{
+    padding-top: 2%;
+    padding-bottom: 15%;
+}
+.buy-btn, .know-btn{
+ padding-left: 10%;
+ padding-right: 10%;
+}
+.know-btn{
+    background-color: red;   
+}
+.section2{
+    padding-top: 2%;
+    text-align: center;
+}
+.heading1{
+    font-size: 2.5rem;
+}
+.heading2{
+    padding-bottom:5%;
+}
+
+.para1{
+    padding-bottom: 5%;
+    color: black;
+    text-align: center;
+    margin: auto;
+}
+.card{
+    width: 20rem;
+}
+.card1,.card2,.card3{
+    width: 100%;
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+}
+.section3{
+    text-align: center;
+    background-image: url("https://duttrohan0302.github.io/dec16_bootstrapUI/images/image3.jpg");
+    background-attachment: fixed;
+    
+}
+.head1{
+    padding-top: 15%;
+    padding-bottom: 5%;
+    text-align: center;
+    color: black;
+}
+.shw-btn{
+    margin-bottom: 11%;
+    width: 15%;
+    padding: 10px;
+
+
+}
+.icon{
+    font-size: 1.5em;
+    font-weight: 900;
+    color: lightseagreen;
+    padding-left: 15%;
+}
+.para3{ 
+    padding-right: 20%;
+    padding-left: 20%;
+}
+.para4{
+    padding-top: 5%; 
+    padding-right: 20%;
+    padding-left: 20%;
+}
+.section5{
+    text-align: center;
+}
+.section6{
+    text-align: center;
+}
+.fab{
+   padding: 15px;
+   size: 35%;
+   font-size: 150%;    
+}
+.social1{
+   color: rgb(66,103,178);;
+}
+.social2{
+    color: rgb(85,172,239);
+}
+.social3{
+    color:  #007bff;
+}
+.social4{
+    color:rgb(255,0,0);
+}
+.copyright{
+   color:  lightgreen;
+}
