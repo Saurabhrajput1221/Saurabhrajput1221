@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple calculator</title>
+    <script>
+     function f1(){
+       var x= Number(document.getElementById("n1").value);
+       var y= Number(document.getElementById("n2").value);
+       var z = document.getElementById("sym").value;
+       if(x=="" || y==""){
+       window.alert("please enter num")
+       document.getElementById("ans").innerHTML="number not entered";
+
+       }else  if (z =="+"){
+           var o = x+y;
+           document.getElementById("ans").innerHTML=o;
+       }
+       else  if (z =="-"){
+           var o = x-y;
+           document.getElementById("ans").innerHTML=o;
+       }
+   
+       else  if (z =="*"){
+           var o = x*y;
+           document.getElementById("ans").innerHTML=o;
+       }
+   
+       else  if (z =="/"){
+           var o = x/y;
+           document.getElementById("ans").innerHTML=o;
+       }       
+     }
+    </script>
+   
+</head>
+<body>
+    <div>
+        <input type="number" id="n1" placeholder="Enter number1">
+        
+            <select name="operator" id="sym">
+                <option value="+">+</option>
+                <option value="-">-</option>
+                <option value="/">/</option>
+                <option value="*">*</option>
+            </select>
+            <input type="number" id="n2" placeholder="Enter num2">
+            <button onclick="f1()">=</button>
+            <div id="ans"></div>
+         
+          </div>
+    
+</body>
+</html>
