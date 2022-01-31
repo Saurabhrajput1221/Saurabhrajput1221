@@ -1,0 +1,23 @@
+body{
+    align-items: center;
+    justify-content: center;
+    background-color: aqua;
+    display: flex;
+    height: 100vh;
+    overflow: hidden;
+    
+}
+div{
+    position: absolute;
+    bottom: 20px;
+    padding: 20px;
+    font-size: 20px;
+    background-color: burlywood;
+}
+input{
+    outline: none;
+}
+#speed{
+    height: 20px;
+    width: 40px;
+}
