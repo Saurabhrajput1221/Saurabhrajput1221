@@ -49,7 +49,7 @@ submit.addEventListener('click' , function(){
 
                 }
         }   
-        console.log(playerStats)
+        
     createGameCard(playerStats,maxReach,NumberOfPlayers)
 })
 function createGameCard(playerStats,winnerId,NumberOfPlayers){
