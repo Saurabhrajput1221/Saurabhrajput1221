@@ -1,34 +1,68 @@
-const colors = ['#e74c3c', '#8e44ad', '#3498db', '#e67e22', '#2ecc71']
-// const colors = ['#ff7f50','#87cefa','#da70d6','#32cd32','#6495ed','#ff69b4','#ba55d3','#cd5c5c','#ffa500','#40e0d0']
+const RANDOMQUOTE = 'http://api.quotable.io/random'
+const quoteDisplayElement = document.getElementById('quoteDisplay')
+const quoteInputElement = document.getElementById('quoteInput')
+const timerElement = document.getElementById('timer')
+
+// let timer = 0;
 
 
-// const container  = document.getElementById("container")
 
-const SQUARES = 80000
+quoteInputElement.addEventListener('input', () => {
+  const arrayQuote = quoteDisplayElement.querySelectorAll('span')
+  const arrayValue = quoteInputElement.value.split('')
 
-for(let i=0;i<SQUARES;i++){
-    const square = document.createElement("div")
-    square.classList.add("square")
+  let correct = true
+  arrayQuote.forEach((characterSpan, index) => {
+    const character = arrayValue[index]
+    if (character == null) {
+      characterSpan.classList.remove('correct')
+      characterSpan.classList.remove('incorrect')
+      correct = false
+    } else if (character === characterSpan.innerText) {
+      characterSpan.classList.add('correct')
+      characterSpan.classList.remove('incorrect')
+    } else {
+      characterSpan.classList.remove('correct')
+      characterSpan.classList.add('incorrect')
+      correct = false
+    }
+  })
 
-    square.addEventListener("mouseover",()=> setColor(square))
-    square.addEventListener("mouseout",()=> removeColor(square))
+  if (correct) renderNewQuote()
+})
 
-    container.appendChild(square)
+function getRandomQuote() {
+  return fetch(RANDOMQUOTE)
+    .then(response => response.json())
+    .then(data => data.content)
+}
+// function random(number){
+//   let val = Math.floor(Math.random()*number)
+//  console.log(number)
+// } 
+
+async function renderNewQuote() {
+  const quote = await getRandomQuote()
+  quoteDisplayElement.innerHTML = ''
+  quote.split('').forEach(character => {
+    const characterSpan = document.createElement('span')
+    characterSpan.innerText = character
+    quoteDisplayElement.appendChild(characterSpan)
+  })
+  quoteInputElement.value = null
+  startTimer()
 }
 
-function setColor(element){
-    const color = randomColor()
-
-    element.style.background = color
-    element.style.boxShadow = `0 0 2px ${color}, 0 0 10px ${color}`
-
+let startTime
+function startTimer() {
+  timerElement.innerText = 0
+  startTime = new Date()
+  setInterval(() => {
+    timer.innerText = getTimerTime()
+  }, 1000)
 }
 
-function removeColor(element){
-    element.style.background = "#1d1d1d"
-    element.style.boxShadow = "0 0 2px #000"
+function getTimerTime() {
+  return Math.floor((new Date() - startTime) / 1000)
 }
-function randomColor(){
-    const index = Math.floor(Math.random()*colors.length)
-    return colors[index]
-}
+renderNewQuote()
