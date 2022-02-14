@@ -1,0 +1,84 @@
+/* body {
+  font-family: "Montserrat";
+  /* background-image: href; */
+/* width: 100%;
+} */
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #1f2235;
+  font-family: "Baloo Tamma 2", cursive;
+}
+.container-fluid {
+  padding: 3% 4% 5% 10%;
+}
+
+h1 {
+  text-align: center;
+  text-decoration: underline;
+  padding: 5px;
+}
+.section1 {
+  background-color: #1f2235;
+  color: black;
+  text-align: center;
+  /* height: 5%; */
+}
+
+.skill {
+  background: #1f2235;
+  /* margin: 5px; */
+  color: wheat;
+  /* width: 50%; */
+  /* border-radius: 10px; */
+  padding: 10px;
+}
+
+#navbarSupportedContent {
+  text-align: center;
+  justify-content: center;
+}
+
+.About {
+  background: #313552;
+  /* border-radius: 10px; */
+  /* margin: 5px; */
+}
+
+.card {
+  border-bottom: 8px solid #f5ba09;
+}
+.abc {
+  background-color: rgb(12, 2, 39);
+  margin-top: -50px;
+}
+.github {
+  color: black;
+  text-align: center;
+  justify-content: center;
+  /* padding: 40px;; */
+  margin-left: 100px;
+}
+.fab {
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+  /* margin: 10px; */
+}
+.fa {
+  text-align: center;
+  justify-content: center;
+  /* margin-left: 400px; */
+  padding: 5px;
+}
+.bottom-container {
+  text-align: center;
+  justify-content: center;
+}
+.img-fluid{
+  border-radius: 15px;
+  margin-left: -80px;
+  margin-top: 45px;
+}
