@@ -1,0 +1,112 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+  font-family: sans-serif;
+  background-color:lightyellow;
+}
+.heading{
+  background-color:  green;
+  padding: 5px;
+  color: black
+}
+.container{
+  width: 500px;
+  margin: auto;
+  /* display: flex; */
+  
+}
+#input-form{
+  width: 100%;
+  display: flex;
+  padding: 50px;
+  height: 55px;
+  align-items: center;
+  justify-content: center;
+
+}
+.input-field{
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+}
+.input-field label{
+  color: green;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+input#site-name , input#site-url{
+  width: 250px;
+  height: 25px;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: 2px solid green;
+}
+button.save_button {
+  /* width: 810px; */
+  height: 50px;
+  background-color: green;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px;
+  border: hidden;
+}
+h2#bookmarkHead {
+  text-align: left;
+  color: green;
+  font-size: 30px;
+  margin: 20px 0px;
+}
+.bookmarks{
+  width: 100%;
+  background-color: grey;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.bookmark{
+  display: flex;
+  align-items: center;
+  width: 300px;
+  height: 40px;
+  padding: 5px 20px;
+  background-color: #FAFAFA;
+  margin-bottom: 10px;
+  background-color:  #333333;
+}
+.bookmark span{
+  flex: 1;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: #fff;
+}
+.bookmark .visit{
+  width: 50px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #47CF73;
+  color: #000;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.bookmark .delete{
+  width: 60px;
+  height: 25px;
+  line-height: 25px;
+  text-align: center;
+  background-color: #F44336;
+  border-radius: 5px;
+}
+
+
+
+
+  

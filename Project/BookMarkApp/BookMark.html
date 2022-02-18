@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bookmark your favourite sites</title>
+    <link rel="stylesheet" href="BookMark.css">
+</head>
+
+<body>
+    <h1 class="heading">BookMark Site</h1>
+    <div class="container">
+        <form id="input-form">
+            <div class="input-field">
+                <label for="site_name">Site Name</label>
+                <input name="site_name" type="text" placeholder="site name" id="site-name">
+            </div>
+
+            <div class="input-field">
+                <label for="url">Site URL</label>
+                <input name="url" type="text" placeholder="https://www.example.com" id="site-url">
+            </div>
+
+            <button style="width: 100%;" class="save_button">Save</button>
+        </form>
+
+        <h2 id="bookmarkHead">Your Bookmarks</h2>
+
+        <div class="bookmarks"></div>
+    </div>
+    <script src="BookMark.js"></script>
+</body>
+
+</html>
