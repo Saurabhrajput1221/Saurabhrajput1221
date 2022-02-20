@@ -1,0 +1,79 @@
+body {
+  font-family: "Baloo Tamma 2", cursive;
+}
+nav {
+  background-color:  #1f2235;
+  color: blueviolet;
+}
+.nav-item {
+  margin-left: 10px;
+}
+.hello {
+  /* position: relative; */
+  /* text-align: center; */
+  padding-top: 250px;
+}
+#Home {
+  background-color: #1f2235;
+  background-image: url("./Images/B1.jpeg");
+  height: 250px;
+  /* width: ; */
+  align-items: center;
+  background-repeat: repeat;
+  align-items: center;
+  border-image-repeat: round;
+  border-radius: 15px;
+}
+.container {
+  background-color: #1f2235;
+  color: green;
+}
+.mypic {
+  width: 100%;
+  height: 100%;
+}
+.project {
+  align-items: center;
+  justify-content: space-evenly;
+  color: yellow;
+}
+.skill {
+  padding-left: 2px;
+  background-color: #313552;
+  color: whitesmoke;
+}
+.progress {
+  margin-bottom: 5px;
+}
+h1 {
+  text-align: center;
+  text-decoration: overline;
+}
+.fab {
+  /* text-align: center;
+  justify-content: center; */
+  padding: 5px;
+  /* margin: 10px; */
+}
+.fa {
+  text-align: center;
+  justify-content: center;
+  padding: 5px;
+}
+.bottom-container {
+  text-align: center;
+  justify-content: center;
+}
+h3 {
+  text-align: center;
+}
+#seebtn {
+  margin-left: 45px;
+}
+img {
+  border-radius: 15px;
+}
+#about {
+  padding-top: 15px;
+  padding-left: 5px;
+}
